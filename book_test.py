@@ -17,8 +17,8 @@ class TestBook2(unittest.TestCase):
         self.book.change_author("Karp")
         self.assertEqual("Karp", self.book.author)
     def test_change_year(self):
-        self.book.change_year("2020")
-        self.assertEqual("2020", self.book.year)
+        self.book.change_year(2020)
+        self.assertEqual(2020, self.book.year)
 
 if __name__ == '__main__':
     unittest.main()
